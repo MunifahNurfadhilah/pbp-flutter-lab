@@ -1,5 +1,4 @@
 # Tugas 7: Elemen Dasar Flutter
-Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
 
 ### *Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.*
 Stateless widget adalah widget yang tidak bergantung pada sebuah state. Seluruh konfigurasi yang berada dalam widget stateless telah diinisiasi sejak awal, sehingga setelah di-buils perubahan tidak akan terjadi. 
@@ -24,3 +23,27 @@ Const digunakan untuk mendeklarasikan value yang bersifat immutable. Value dari 
 - Membuat isi field FloatingAcitonButton sesuai dengan kebutuhan proyek, yaitu berisi 2 buah button dimana terdapat button decrement di kiri bawah dan button increment di kanan bawah. Kedua button tersebut juga disambungkan dengan properti onPressed.
 - Mengganti tulisan diatas button counter dengan menambahkan text untuk menampilkan tulisan 'GANJIL' berwarna merah dan 'GENAP' berwarna biru. Kedua text tersebut dimasukkan ke dalam conditional, sehingga text ditampilkan sesuai dengan kondisi _counter.
 - Menambahkan fungsi _incrementCounter() dan _decrementCounter. Di dalam masing-masing fungsi terdapat setState() yang berfungsi untuk menambah/mengurangi counter. _counter hanya akan dikurangi jika _counter > 0.
+
+
+# Tugas 8: Flutter Form
+ 
+### *Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.*
+Ketika mengganti sebuah halaman, Navigator.push akan menimpa halaman baru diatas halaman sebelumnya. Sedangkan Navigator.pushReplacement akan mengganti halaman lama dengan halaman baru. 
+
+### *Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.*
+- Card: wid
+- 
+
+
+### *Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).*
+- onPressed: event yang muncul saat button dipencet user
+- onSaved: event yang muncul saat form telah disimpan
+- onChanged: event yang muncul saat widget mengalami perubahan
+- onTap: event yang muncut saat widget dipencet user
+
+### *Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.*
+Navigaor dapat mengganti sebuah halaman dengan memanfaatkan Stack. Halaman yang dilihat oleh user adalah halaman yang berada pada top of stack. Terdapat beberapa cara mengganti halaman, seperti dapat memanfaatkan push untuk menimpa halaman sebelumnya, pushReplacement untuk mengganti halaman sebelumnya, pop untuk kembali ke halaman sebelumnya, dsb. 
+
+### *Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.*
+- 
+- 
