@@ -31,8 +31,12 @@ Const digunakan untuk mendeklarasikan value yang bersifat immutable. Value dari 
 Ketika mengganti sebuah halaman, Navigator.push akan menimpa halaman baru diatas halaman sebelumnya. Sedangkan Navigator.pushReplacement akan mengganti halaman lama dengan halaman baru. 
 
 ### *Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.*
-- Card: wid
-- 
+- Card: widget untuk menampilkan data budget dalam sebuah kotak
+- Form: widget untuk fields dalam form agar dapat menerima input
+- Drawer: widget untuk navigasi halaman tambahan di bagian kiri aplikasi 
+- TextButton: widget untuk membuat button yang dapat diberikan teks dan ketika button di-klik akan mensubmit isi form yang sudah diinput user
+- DropdownButtonFormField: widget untuk membuat dropdown dan dapat dibuat dengan menggunakan list
+- ListTile: widget untuk membuat tulisan-tulisan dalam drawer
 
 
 ### *Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).*
@@ -45,5 +49,6 @@ Ketika mengganti sebuah halaman, Navigator.push akan menimpa halaman baru diatas
 Navigaor dapat mengganti sebuah halaman dengan memanfaatkan Stack. Halaman yang dilihat oleh user adalah halaman yang berada pada top of stack. Terdapat beberapa cara mengganti halaman, seperti dapat memanfaatkan push untuk menimpa halaman sebelumnya, pushReplacement untuk mengganti halaman sebelumnya, pop untuk kembali ke halaman sebelumnya, dsb. 
 
 ### *Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.*
-- 
-- 
+- Membuat code untuk menambahkan drawer dan menambahkan menu (counter_7, tambah budget, data budget) pada drawer serta memberikan navigasi untuk setiap menunya dengan mengganti Navigator.pushReplacement untuk masing-masing halaman
+- Membuat form.dart dengan MyFormPage serta input yang dibutuhkan dalam form tersebut, validasi setiap input, dan button yang diubah menjadi onPressed agar dapat mensubmit form. Setelah form berhasil di submit, maka akan terdapat objek DataBudget baru. Data-data input tersebut akan disimpan di dalam list yang berisi tipe data DataBudget agar dapat diakses pada halaman Data.
+- Memebuat halaman untuk menampilkan data budget yaitu data.dart dengan MyDataPage. Halaman ini menggunakan widget card untuk menampilkan data budget. Card diisi dengan widget text yang berisi data-fata objek budget yang sudah dibuat. 
