@@ -59,7 +59,10 @@ Navigaor dapat mengganti sebuah halaman dengan memanfaatkan Stack. Halaman yang 
 Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Namun, lebih baik jika kita membuat model terlebih dahulu karena data yang diambil akan sulit untuk disimpan secara terstruktur. Jika kita menggunakan model, data JSON yang diambil menjadi lebih terstruktur, rapih, dan mudah digunakan. 
 
 ### *Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.*
-
+- InkWell : widget yang dapat di-klik oleh user dengan menggunakan onTap().
+- Text : widget untuk menampilkan teks dari endpoint JSON.
+- FutureBuilder : widget yang terupdate berdasarkan data yang terakhir berinteraksi dengan Future, pada proyek ini menampilkan data dari endpoint JSON. 
+- TextButton : widget button yang dapat berisi tulisan, di proyek ini digunakan sebagai tombol back dari setiap film untuk kembali ke MyWatchlist. 
 
 ### *Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.*
 - Data di-fetch dari API endpoint
@@ -68,4 +71,8 @@ Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. 
 - Data model kemudian ditampilkan pada aplikasi Flutter
 
 ### *Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.*
-- 
+- Menambahkan Drawer dari code sebelumnya untuk menambahkan page untuk MyWatchlistPage
+- Membuat model untuk film dengan memasukkan data endpoint JSON menggunakan Quicktype kemudian memasukkan di file model.dart
+- Menginstall dependensi http dan import fetch data dengan fetchToDo() URL website heroku
+- Menampilkan data dari endpoint JSON dengan menggunakan FutureBuilder dan menggunakan widget InkWell agar setiap film dapat di-klik dengan menggunakan onTap(), setelah di-klik akan diarahkan ke page baru yang berisi detail mengenai film tersebut. pada page tersebut terdapat parameter key dan fields dari tiap film agar akses yang diberikan sesuai dengan film yang di-klik
+- Menambahkan tombol back pada setiap halaman description film
