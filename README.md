@@ -52,3 +52,20 @@ Navigaor dapat mengganti sebuah halaman dengan memanfaatkan Stack. Halaman yang 
 - Membuat code untuk menambahkan drawer dan menambahkan menu (counter_7, tambah budget, data budget) pada drawer serta memberikan navigasi untuk setiap menunya dengan mengganti Navigator.pushReplacement untuk masing-masing halaman
 - Membuat form.dart dengan MyFormPage serta input yang dibutuhkan dalam form tersebut, validasi setiap input, dan button yang diubah menjadi onPressed agar dapat mensubmit form. Setelah form berhasil di submit, maka akan terdapat objek DataBudget baru. Data-data input tersebut akan disimpan di dalam list yang berisi tipe data DataBudget agar dapat diakses pada halaman Data.
 - Memebuat halaman untuk menampilkan data budget yaitu data.dart dengan MyDataPage. Halaman ini menggunakan widget card untuk menampilkan data budget. Card diisi dengan widget text yang berisi data-fata objek budget yang sudah dibuat. 
+
+# Tugas 9: Integrasi Web Service pada Flutter
+
+### *Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?*
+Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Namun, lebih baik jika kita membuat model terlebih dahulu karena data yang diambil akan sulit untuk disimpan secara terstruktur. Jika kita menggunakan model, data JSON yang diambil menjadi lebih terstruktur, rapih, dan mudah digunakan. 
+
+### *Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.*
+
+
+### *Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.*
+- Data di-fetch dari API endpoint
+- Data yang sudah di-fetch, akan di-decode menjadi JSON
+- Data JSON dikonversi menjadi data dalam bentuk model
+- Data model kemudian ditampilkan pada aplikasi Flutter
+
+### *Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.*
+- 
